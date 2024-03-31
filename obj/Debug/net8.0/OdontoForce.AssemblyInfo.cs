@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OdontoForce")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9907bed82c62c1de58215ea3ea4e2af0b5dff34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78921248c6946d9c6ac4fa23893f30623d8d7ff3")]
 [assembly: System.Reflection.AssemblyProductAttribute("OdontoForce")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OdontoForce")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

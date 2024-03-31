@@ -15,7 +15,10 @@ namespace OdontoForce
             menuInteractor = _menuIterator;
         }
 
-        public int validateOperator()
+        /// <summary>
+        /// This method will verify the characteres.
+        /// </summary>
+        public int validateNoYesOperator()
         {
             bool notValid = true;
 
@@ -36,6 +39,31 @@ namespace OdontoForce
             }
                         
             return menuInteractor; 
+        }
+    
+        public int validateCrudOperator()
+        {
+            bool notValid = true;
+
+            if ((menuInteractor == 1) || (menuInteractor == 2) || (menuInteractor == 3))
+            {
+                return menuInteractor;
+            }
+            else
+            {
+                while (notValid)
+                {
+                    Console.WriteLine("The options of operator is wrong!");
+                    Console.WriteLine("Please, choose 1, 2 or 3 for client options");
+
+                    menuInteractor = Convert.ToInt32((Console.ReadLine()));
+
+                    notValid = (menuInteractor == 1) || (menuInteractor == 2) || (menuInteractor == 3) 
+                        ? false : true;
+                }
+            }
+
+            return menuInteractor;
         }
     }
 }

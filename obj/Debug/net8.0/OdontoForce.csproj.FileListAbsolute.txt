@@ -7,9 +7,9 @@ C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\Odo
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.AssemblyInfoInputs.cache
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.AssemblyInfo.cs
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.csproj.CoreCompileInputs.cache
+C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.sourcelink.json
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.dll
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\refint\OdontoForce.dll
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.pdb
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.genruntimeconfig.cache
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\ref\OdontoForce.dll
-C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.sourcelink.json

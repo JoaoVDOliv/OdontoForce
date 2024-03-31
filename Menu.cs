@@ -10,7 +10,9 @@ namespace OdontoForce
     public class Menu
     {
         public void menu()
-        {            
+        {
+            MenusValidator menusValidator;
+
             Console.WriteLine("-------------------------------------------");
             Console.WriteLine("Welcome to OdontForce");
             Console.WriteLine("Do you want start the operations?");
@@ -18,11 +20,13 @@ namespace OdontoForce
             Console.WriteLine("0-No");
             Console.WriteLine("-------------------------------------------");
 
-            MenusValidator menusValidator = new MenusValidator(Convert.ToInt32(Console.ReadLine()));
+            menusValidator = new MenusValidator(Convert.ToInt32(Console.ReadLine()));
             
-            if (menusValidator.validateOperator() == 1)
+            if (menusValidator.validateNoYesOperator() == 1)
             {
                 Console.WriteLine("Dentist Worker");
+                
+                MenuFunctionalities.mainFuncionalities();
             }
             else
             {
