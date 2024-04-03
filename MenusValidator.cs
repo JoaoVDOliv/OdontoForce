@@ -41,29 +41,29 @@ namespace OdontoForce
             return menuInteractor; 
         }
     
-        public int validateCrudOperator()
+        public bool validateCrudOperator()
         {
             bool notValid = true;
 
-            if ((menuInteractor == 1) || (menuInteractor == 2) || (menuInteractor == 3))
+            if ((menuInteractor == 1) || (menuInteractor == 2) || (menuInteractor == 3) || (menuInteractor == 0))
             {
-                return menuInteractor;
+                return notValid = false;
             }
             else
             {
                 while (notValid)
                 {
                     Console.WriteLine("The options of operator is wrong!");
-                    Console.WriteLine("Please, choose 1, 2 or 3 for client options");
+                    Console.WriteLine("Please, choose 1, 2, 3 or 0 for client options");
 
                     menuInteractor = Convert.ToInt32((Console.ReadLine()));
 
-                    notValid = (menuInteractor == 1) || (menuInteractor == 2) || (menuInteractor == 3) 
+                    notValid = (menuInteractor == 1) || (menuInteractor == 2) || (menuInteractor == 3) || (menuInteractor == 0)
                         ? false : true;
                 }
             }
 
-            return menuInteractor;
+            return notValid;
         }
     }
 }

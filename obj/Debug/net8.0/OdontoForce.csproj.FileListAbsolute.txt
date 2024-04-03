@@ -13,10 +13,3 @@ C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\ref
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.pdb
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.genruntimeconfig.cache
 C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\ref\OdontoForce.dll
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-C:\VisualStudioProjects\OdontoForce\OdontoForce\OdontoForce\obj\Debug\net8.0\OdontoForce.sourcelink.json
-=======
->>>>>>> e9907bed82c62c1de58215ea3ea4e2af0b5dff34
->>>>>>> 78921248c6946d9c6ac4fa23893f30623d8d7ff3
