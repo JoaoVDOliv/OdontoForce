@@ -6,16 +6,33 @@ using System.Threading.Tasks;
 
 namespace OdontoForce
 {
-    public class RegisterClient
+    public class ClientFuncions
     {        
-        protected string name {  get; set; }
-        protected int age { get; set; }
-        protected int id { get; set; }
-        protected string email { get; set; }
+        protected List<string> clientList { get; set; }
 
-        public RegisterClient() 
+        public ClientFuncions() 
         {
-            
+            clientList = new List<string>();
+        }
+
+        public void insertClient(string _name)
+        {
+            if (_name != "")
+            {
+                clientList.Add(_name);
+            }
+            else
+            {
+                Console.WriteLine("Name cannot be null!");
+            }
+        }
+
+        public void consultListClients()
+        {
+            for (int i = 0; i < clientList.Count(); i++)
+            {
+                Console.WriteLine(clientList[i]);
+            }
         }
     }
 }

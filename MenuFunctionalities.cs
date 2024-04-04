@@ -12,30 +12,43 @@ namespace OdontoForce
         public static void mainFuncionalities()
         {
             MenusValidator menusValidator;
-            
-            int menuIterator = 0;
-            
-            Console.WriteLine("-----System Functionalities-----");
-            Console.WriteLine("1-Register user");
-            Console.WriteLine("2-Update user");
-            Console.WriteLine("3-Delete user");
-            Console.WriteLine("0-Exit");
+            ClientFuncions clientFunctions;
 
-            menuIterator = Convert.ToInt32(Console.ReadLine());
-                        
-            menusValidator = new MenusValidator(menuIterator);
-
-            if (!menusValidator.validateCrudOperator())
+            List<string> clientList = new List<string>();
+            int menuIterator = 0;            
+                       
+            do
             {
-                do
+                Console.WriteLine("________________________________");
+                Console.WriteLine("Choose one option");
+                Console.WriteLine("1-Register Client");
+                Console.WriteLine("2-Show client List");
+                Console.WriteLine("3-Edit Client");
+                Console.WriteLine("4-Delete Client");
+                Console.WriteLine("0-Exit");
+                Console.WriteLine("________________________________");
+
+                menuIterator = Convert.ToInt32(Console.ReadLine());
+
+                menusValidator = new MenusValidator(menuIterator);
+
+                if (!menusValidator.validateCrudOperator())
                 {
+                    clientFunctions = new ClientFuncions();
+
                     switch (menuIterator)
                     {
                         case 1:
                             Console.WriteLine("User Register");
+
+                            clientFunctions.insertClient(Console.ReadLine());
+                            clientFunctions.consultListClients();
+
                             break;
                         case 2:
-                            Console.WriteLine("User updated");
+
+                            clientFunctions.consultListClients();
+
                             break;
                         case 3:
                             Console.WriteLine("User deleted");
@@ -44,8 +57,8 @@ namespace OdontoForce
                             Console.WriteLine("Bye");
                             break;
                     }
-                } while (menuIterator != 0);
-            }
+                }
+            } while (menuIterator != 0);            
         }
     }
 }
