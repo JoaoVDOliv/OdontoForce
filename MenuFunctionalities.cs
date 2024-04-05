@@ -11,24 +11,22 @@ namespace OdontoForce
     {        
         public static void mainFuncionalities()
         {
-            ClientFuncions clientFunctions;
+            ClientFuncions clientFunctions =  new ClientFuncions();
 
-            int menuIterator = 0;            
-                       
+            int menuIterator = 0;
+
             do
             {
                 Console.WriteLine("________________________________");
                 Console.WriteLine("Choose one option");
                 Console.WriteLine("1-Register Client");
                 Console.WriteLine("2-Show client List");
-                Console.WriteLine("3-Edit Client");
-                Console.WriteLine("4-Delete Client");
+                Console.WriteLine("3-Delete Client");
+                Console.WriteLine("4-Edit Client");
                 Console.WriteLine("0-Exit");
                 Console.WriteLine("________________________________");
 
-                menuIterator = Convert.ToInt32(Console.ReadLine());
-                
-                clientFunctions = new ClientFuncions();
+                menuIterator = Convert.ToInt32(Console.ReadLine());                
 
                 switch (menuIterator)
                 {
@@ -37,14 +35,18 @@ namespace OdontoForce
 
                         clientFunctions.insertClient(Console.ReadLine());                        
                         break;
-                    case 2:
+                    case 2:                        
+                        Console.WriteLine("List of clients:");
 
                         clientFunctions.consultListClients();
-
                         break;
                     case 3:
+                        
+                        clientFunctions.deleteClient();
+                        break;
+                    case 4:
 
-                        Console.WriteLine("User deleted");
+                        clientFunctions.updateClient();
                         break;
                     case 0:
 
