@@ -11,10 +11,8 @@ namespace OdontoForce
     {        
         public static void mainFuncionalities()
         {
-            MenusValidator menusValidator;
             ClientFuncions clientFunctions;
 
-            List<string> clientList = new List<string>();
             int menuIterator = 0;            
                        
             do
@@ -29,34 +27,34 @@ namespace OdontoForce
                 Console.WriteLine("________________________________");
 
                 menuIterator = Convert.ToInt32(Console.ReadLine());
+                
+                clientFunctions = new ClientFuncions();
 
-                menusValidator = new MenusValidator(menuIterator);
-
-                if (!menusValidator.validateCrudOperator())
+                switch (menuIterator)
                 {
-                    clientFunctions = new ClientFuncions();
+                    case 1:
+                        Console.WriteLine("Write the client name: ");
 
-                    switch (menuIterator)
-                    {
-                        case 1:
-                            Console.WriteLine("User Register");
+                        clientFunctions.insertClient(Console.ReadLine());                        
+                        break;
+                    case 2:
 
-                            clientFunctions.insertClient(Console.ReadLine());
-                            clientFunctions.consultListClients();
+                        clientFunctions.consultListClients();
 
-                            break;
-                        case 2:
+                        break;
+                    case 3:
 
-                            clientFunctions.consultListClients();
+                        Console.WriteLine("User deleted");
+                        break;
+                    case 0:
 
-                            break;
-                        case 3:
-                            Console.WriteLine("User deleted");
-                            break;
-                        case 0:
-                            Console.WriteLine("Bye");
-                            break;
-                    }
+                        Console.WriteLine("Bye");
+                        break;
+                        
+                    default:
+                        Console.WriteLine("Invalid option!");
+                        Console.WriteLine("Please, choose beetwen one option of navegation");
+                    break;                    
                 }
             } while (menuIterator != 0);            
         }

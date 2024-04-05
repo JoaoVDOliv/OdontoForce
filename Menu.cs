@@ -11,27 +11,36 @@ namespace OdontoForce
     {
         public void menu()
         {
-            MenusValidator menusValidator;
-
-            Console.WriteLine("-------------------------------------------");
-            Console.WriteLine("Welcome to OdontForce");
-            Console.WriteLine("Do you want start the operations?");
-            Console.WriteLine("1-Yes");
-            Console.WriteLine("0-No");
-            Console.WriteLine("-------------------------------------------");
-
-            menusValidator = new MenusValidator(Convert.ToInt32(Console.ReadLine()));
-            
-            if (menusValidator.validateNoYesOperator() == 1)
+            int menuValidator = 0;
+                        
+            do
             {
-                Console.WriteLine("Dentist Worker");
-                
-                MenuFunctionalities.mainFuncionalities();
-            }
-            else
-            {
-                Console.WriteLine("Good Bye");
-            }
+                Console.WriteLine("-------------------------------------------");
+                Console.WriteLine("Welcome to OdontForce");
+                Console.WriteLine("Do you want start the operations?");
+                Console.WriteLine("1-Yes");
+                Console.WriteLine("0-No");
+                Console.WriteLine("-------------------------------------------");
+
+                menuValidator = Convert.ToInt32(Console.ReadLine());
+
+                switch (menuValidator) 
+                {
+                    case 0:
+
+                        Console.WriteLine("Good Bye");
+                        break;
+                    case 1:
+
+                        MenuFunctionalities.mainFuncionalities();
+                        break;
+                    default:
+                        
+                        Console.WriteLine("Invalid option!");
+                        Console.WriteLine("You must choose beetwen the start operation options");
+                        break;
+                }                
+            } while (menuValidator != 0);
         }
     }
 }
