@@ -64,7 +64,7 @@ namespace OdontoForce
                         {
                             if (confirmDelete == 1)
                             {
-                                clientList.RemoveAt(i);
+                                clientList.Remove(clientList[i]);
                             }
                             else if (confirmDelete == 0)
                             {
@@ -122,9 +122,16 @@ namespace OdontoForce
 
                         } while ((confirmDelete != 0) && (confirmDelete != 1));
                     }
-
                 }
             }
         }
+
+        //private void rearangeList()
+        //{
+        //    for (int i = 0; i < clientList.Count(); i++)
+        //    {
+        //        clientList.remote
+        //    }
+        //}
     }
 }
